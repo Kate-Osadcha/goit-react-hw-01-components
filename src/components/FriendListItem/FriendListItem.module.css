@@ -1,0 +1,50 @@
+.item {
+  width: 300px;
+  height: auto;
+  /* margin: 10px auto; */
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+  opacity: 1;
+  transition: opacity 250ms linear;
+  cursor: pointer;
+}
+
+.item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.item:hover,
+.item:focus {
+  opacity: 0.6;
+  transition: opacity 250ms linear;
+}
+
+.status {
+  margin: 0 15px;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.online {
+  composes: status;
+  background-color: rgb(76, 175, 80);
+}
+
+.offline {
+  composes: status;
+  background-color: rgb(244, 67, 54);
+}
+
+.avatar {
+  width: 60px;
+  margin-right: 10px;
+}
+
+.name {
+  font-weight: 500;
+}

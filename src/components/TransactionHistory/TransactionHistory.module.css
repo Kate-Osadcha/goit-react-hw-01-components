@@ -1,0 +1,42 @@
+.transaction-history {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #ffffff;
+  color: rgb(128, 129, 132);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.transaction-head {
+  border: 0px solid rgb(181, 181, 181);
+  background-color: rgb(0, 188, 213);
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.transaction-title {
+  width: 33.3%;
+  padding: 15px 5px;
+}
+
+.transaction-row:nth-child(even) {
+  background-color: rgb(236, 241, 244);
+}
+
+.transaction-cell {
+  padding: 15px 5px;
+  text-transform: capitalize;
+  transition: background-color 250ms linear;
+  cursor: pointer;
+}
+
+.transaction-cell:hover,
+.transaction-cell:focus {
+  background-color: rgb(201, 220, 223);
+  transition: background-color 250ms linear;
+}
