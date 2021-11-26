@@ -1,7 +1,8 @@
-import PropTypes from "prop-types";
-import s from "./Profile.module.css";
+import PropTypes from 'prop-types';
+import defaultImage from './default.jpg';
+import s from './Profile.module.css';
 
-const Profile = ({ username, tag, location, avatar, stats }) => {
+const Profile = ({ username, tag, location, avatar = defaultImage, stats }) => {
   return (
     <div className={s.profile}>
       <div className={s.description}>
