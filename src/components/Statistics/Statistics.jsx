@@ -1,5 +1,5 @@
-import PropTypes from "prop-types";
-import s from "./Statistics.module.css";
+import PropTypes from 'prop-types';
+import s from './Statistics.module.css';
 
 function randomColor() {
   return Math.floor(Math.random() * 256);
@@ -8,10 +8,10 @@ function randomColor() {
 const Statistics = ({ title, stats }) => {
   return (
     <section className={s.statistics}>
-      <h2 className={s.title}>{title}</h2>
+      {title && <h2 className={s.title}>{title}</h2>}
 
-      <ul className={s["stat-list"]}>
-        {stats.map((stat) => (
+      <ul className={s['stat-list']}>
+        {stats.map(stat => (
           <li
             className={s.item}
             key={stat.id}
@@ -35,7 +35,7 @@ Statistics.propTypes = {
       id: PropTypes.string.isRequired,
       label: PropTypes.string,
       percentage: PropTypes.number,
-    })
+    }),
   ),
 };
 
