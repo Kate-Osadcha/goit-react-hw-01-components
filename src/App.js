@@ -8,8 +8,6 @@ import FriendList from './components/FriendList/FriendList.jsx';
 import transactions from './data/transactions.json';
 import TransactionHistory from './components/TransactionHistory/TransactionHistory.jsx';
 
-// import "./App.css";
-
 export default function App() {
   return (
     <Container>
